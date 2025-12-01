@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevClub IITD | We Think. Build. Solve.</title>
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      border: 1px solid yellow;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    /* ===== Body ===== */
+    body {
+      background: radial-gradient(circle at top, #0a0f1a 0%, #000 100%);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* ===== Header / Navbar ===== */
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 80px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .Head {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .Logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .headLogo {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #3b82f6;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 120px; /* prevents overlap with navbar */
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #3b82f6;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      color: #b3b3b3;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    /* ===== Buttons ===== */
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .btn {
+      padding: 12px 28px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn.primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn.primary:hover {
+      background: #2563eb;
+    }
+
+    .btn.secondary {
+      background: white;
+      color: black;
+    }
+
+    .btn.secondary:hover {
+      background: #e2e8f0;
+    }
+
+    /* ===== Info Cards ===== */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 50px 80px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      width: 260px;
+      backdrop-filter: blur(8px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: #3b82f6;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #3b82f6;
+    }
+
+    .card p {
+      color: #b3b3b3;
+      font-size: 0.95rem;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 40px;
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .cards {
+        padding: 30px;
+      }
+      .HomeLogo{
+        height: 50px;
+        width: auto;
+      }
+      .HomeLogoImg{
+        height: 10px;
+        width: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <div class="Head">
+      <img class="Logo" src="LogoDarkMode.png" alt="DevClub Logo">
+      <p class="headLogo">DevClub IITD</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Communities</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="HomeLogo"><img class="HomeLogoImg" src="LogoDarkMode.png"></div>  
+    
+    <h1>We <span>Think.</span> Build. <span>Solve.</span></h1>
+    <p>DevClub IITD is a community of developers, innovators, and problem solvers fostering technical excellence and creative engineering at IIT Delhi since 2017.</p>
+
+    <div class="buttons">
+      <button class="btn secondary">Communities</button>
+      <button class="btn primary">View Projects</button>
+    </div>
+  </section>
+
+  <!-- ===== Info Cards Section ===== -->
+  <div class="cards">
+    <div class="card">
+      <h3>50+ Projects</h3>
+      <p>Open source contributions</p>
+    </div>
+
+    <div class="card">
+      <h3>20+ Events</h3>
+      <p>Workshops & hackathons yearly</p>
+    </div>
+
+    <div class="card">
+      <h3>Community of 1000+</h3>
+      <p>Active developer community</p>
+    </div>
+  </div>
+</body>
+</html>

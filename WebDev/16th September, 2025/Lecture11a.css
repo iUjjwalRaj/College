@@ -1,0 +1,9 @@
+div{
+    border : 5px solid rebeccapurple;
+    height: 250px;
+    width: 300px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+
+}

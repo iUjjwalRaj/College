@@ -1,0 +1,409 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid blueviolet; */
+            
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100vw;
+            
+}
+header img{
+    height: 1.59rem;
+
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+            
+}
+#Holiday1 img{
+    height: 450px;
+}
+#Holiday1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#TagLine{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 480px;
+    width: 900px;
+        
+}
+#SignUPButton{
+    background-color: transparent;
+    color: #0071e3;
+    border: 1px solid #0071e3;
+    padding: 12px 24px;font-size: 16px;
+    cursor: pointer;
+     margin-top: 20px;
+    border-radius: 9999px;
+}
+.Holiday{
+    display: flex;
+    align-items: center;
+    background-image: url(Holiday.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     width: 100vw;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+            
+}
+#Offer{
+    display: flex;
+    justify-content: center;
+    padding: 00px;
+     margin-top: 30px;
+    padding: 2px;
+    position: relative;
+    background-color: #f5f5f7;
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+#iPhone17ProNew{
+    background-color: black;
+}
+#Black{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.phone-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: black; 
+    padding: 0 100px;
+ }
+
+.phone-image img {
+    max-width: 1600px;  
+    height: 500px;
+    object-fit: cover; 
+}
+#iPhoneButton {
+    background-color: #0071e3;
+    color: white;
+    border: 1px solid #0071e3;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 9999px;
+
+}
+ #iPhoneButton1 {
+    background-color: transparent;
+    color: #0071e3;
+    border: 1px solid #0071e3;
+     padding: 12px 24px;
+     font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 9999px;
+}
+#Heading1 {
+    font-size: 20px; 
+    margin-top: 0px;
+    color: white;
+    margin-top: 100px;
+}
+#Heading2 {
+    font-size: 10px; 
+    margin-top: 0px;
+    color: white;
+}
+#TagLine2{
+    font-size: 30px;
+}
+#TagLine1{
+    font-size: 50px;
+}
+#iPhone17Pro{
+    display: flex;
+     align-items: center;
+            
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+            
+}
+#MainHeader{
+    position: fixed;
+}
+#hs{
+    display: flex;
+    margin: 0px;
+    margin-left: 200px;
+    padding: 0px;
+    align-items: center;
+            
+}
+#Heading3{
+    font-size: 20px; 
+    margin-top: 0px;
+    color: black
+
+}
+#Heading4{
+    font-size: 10px; 
+     margin-top: 0px;
+    color: black;
+}
+.phone-image2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f7; 
+    padding: 0px;
+    margin-left: 0px;
+}
+
+.phone-image2 img {
+    max-width: 100vw;  
+    height: 500px;
+    margin-left: 0px;
+    object-fit: cover; 
+}
+#iPhoneAir{
+    display: flex;
+    align-items: center;
+            
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+            
+}
+#White1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+        
+       
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.product-tile {
+  background: #f5f5f7;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+
+
+.product-tile.dark {
+  background: #000;
+  color: #fff;
+}
+
+
+.product-tile h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+
+
+
+.product-tile p {
+
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+
+.tile-buttons {
+  margin-bottom: 20px;
+}
+.tile-buttons a {
+
+  display: inline-block;
+  margin: 4px 6px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+
+
+  font-size: 14px;
+  border: 1px solid #0071e3;
+  color: #0071e3;
+
+  text-decoration: none;
+}
+.tile-buttons a:first-child {
+  background: #0071e3;
+  color: #fff;
+}
+
+
+.product-tile img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: 1fr; }
+}
+
+
+
+
+.site-footer {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  color: #6e6e73;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.footer-legal {
+  max-width: 1200px;
+  margin: 28px auto;
+  padding: 0 20px;
+  color: #666;
+  font-size: 13px;
+}
+.footer-grid {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.footer-col h4 { 
+    font-size: 14px; 
+    color: #111; 
+
+
+    margin-bottom: 10px; 
+    font-weight: 600; 
+}
+
+
+.footer-col ul { 
+    list-style: none; 
+    padding: 0; }
+
+.footer-col li { 
+    margin: 6px 0; 
+}
+
+
+
+    
+
+.footer-col a:hover {
+
+    text-decoration: underline; 
+    color: #0071e3; 
+}
+
+.footer-bottom {
+
+  max-width: 1200px;
+  margin: 18px auto 40px;
+
+  padding: 12px 20px;
+  display: flex;
+
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.footer-bottom-left p { 
+
+    margin: 6px 0; 
+    color:#666; 
+    font-size:13px; 
+
+}
+
+
+
+.footer-bottom-right { 
+    display:flex; 
+    gap:20px; 
+    align-items:center; 
+
+}
+.small-links { 
+    display:flex; 
+    gap:12px; 
+    
+    align-items:center; 
+}
+.small-links a { 
+    color:#6e6e73; text-decoration:none; 
+    font-size:13px; 
+}
+
+.small-links a:hover { 
+    color:#0071e3; 
+    text-decoration:underline; 
+}
+
+.copyright { 
+    color:#9b9b9b; 
+    font-size:13px; 
+}
+
+
+
+
+
+
+
+

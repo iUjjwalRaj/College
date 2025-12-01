@@ -1,0 +1,19 @@
+div{
+    color: blue;
+    background: url(Alya.png);
+    background-size: cover;
+    border : 5px solid antiquewhite;
+    height: 720px;
+    width: 1280x;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    padding: 20px;
+    margin: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    /* text-align: center; */
+    /* text-align: right; */
+
+}

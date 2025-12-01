@@ -1,0 +1,137 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumen — Beautiful Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Lumen</a>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Design that feels alive</h1>
+          <p>Craft modern, delightful interfaces with minimal effort. Lumen provides clean components and thoughtful motion to help you ship beautiful products faster.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="#features">Get Started</a>
+            <a class="btn-ghost" href="#gallery">See examples</a>
+          </div>
+          <ul class="kpis">
+            <li><strong>120+</strong><span>components</span></li>
+            <li><strong>10k+</strong><span>downloads</span></li>
+            <li><strong>4.9</strong><span>user rating</span></li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="device">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='420'><rect width='100%' height='100%' rx='18' fill='%23FFFFFF' stroke='%23E6E9EE' /></svg>" alt="mock" />
+            <div class="ui-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-line short"></div>
+                <div class="mock-line"></div>
+                <div class="mock-line long"></div>
+                <div class="mock-cards">
+                  <div class="mini-card"></div>
+                  <div class="mini-card"></div>
+                  <div class="mini-card"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Why developers love Lumen</h2>
+        <p class="lead">A small set of components and utilities that behave beautifully on every device.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Performance-first</h3>
+            <p>Small CSS footprint, optimized assets and careful animations keep pages fast.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Built with semantic markup and keyboard-friendly interactions.</p>
+          </article>
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Layouts and components adapt gracefully from phones to large screens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="lead">Snippets and components you can reuse right away.</p>
+        <div class="grid-gallery">
+          <div class="tile tile-1">Card demo</div>
+          <div class="tile tile-2">Form demo</div>
+          <div class="tile tile-3">Dashboard</div>
+          <div class="tile tile-4">Profile</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Start your project</h2>
+          <p>We'd love to hear what you're building. Tell us the idea and we'll send a starter kit.</p>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — form stubbed for demo!')">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email address" required />
+          <textarea placeholder="One-sentence description" rows="3"></textarea>
+          <button class="btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Lumen — Crafted with care.</p>
+      <div class="social">
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+        <a href="#">Docs</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script for dynamic year and hamburger toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const ham = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    ham.addEventListener('click', ()=> {
+      nav.classList.toggle('open');
+      ham.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmet</title>
+</head>
+<body>
+    <h1>HTML-Only: Mega Application Form</h1>
+    <p><b>Rules:</b> Use only valid inputs. All starred fields are required. Read <i>titles</i> for hints. No
+        JavaScript.
+    </p>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Account</legend>
+            <label for="username">*Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br><br>
+            <label for="password">*Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+            <label for>*Applying as</label>
+            <br>
+            <select name="role" id="role" required>
+                <option value="">Choose one</option>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Personal Information</legend><br>
+            <label for="fullname">*Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <br><br>
+            <label for="date">*Date of Birth</label><br>
+            <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>
+            <br><br>
+            <lable for="">*Gender</lable>
+            <br>
+            <input type="radio" name id required>
+            <label for="">Female</label>
+            <input type="radio" name id required>
+            <label for="">Male</label>
+            <input type="radio" name id required>
+            <label for="">Other</label>
+            <br><br>
+            <lable for="">*Govt ID (PAN Format)</lable><br>
+            <input type="text" id="govtid" name="govtid" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="ABCDE1234F" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact & Address</legend>
+            <label for="email">*Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <br><br>
+            <label for="phone">*Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+91-9XXXXXXXXX" pattern="\+91-[0-9]{10}" required>
+            <br><br>
+            <label for="">*Portfolio URL(HTTPS only)</label><br>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com" pattern="https://.*" required>
+            <br><br>
+            <label>*Country</label><br>
+            <input type="text" id="country" name="country" placeholder="Start Typing...">
+            <br><br>
+            <label for="">*State/UT(India)</label><br>
+            <input type="text" id="state" name="state" placeholder="e.g. Maharashtra" required>
+            <br><br>
+            <label for="">*PIN CODE</label><br>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" placeholder="6-Digit PIN" required>
+            <br><br>
+            <label for="address">*Address</label><br>
+            <br>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Flat/House No.:, Street, Area, etc" required></textarea>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education & Skills</legend>
+            <label for="edu">*Highest Education Qualification:</label> <br>
+            <select name="edu" id="edu" required>
+                <option value="">Choose one</option>
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="">CGPA (0-10)</label><br>
+            <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" placeholder="e.g. 8.75">
+            <br><br>
+            <label for="skills">*Pimary Skills</label>
+            <br>
+            <select name="skills" id="skills" required>
+                <option value="">Pick one</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+                <option value="sql">SQL</option>
+                <option value="react">React</option>
+                <option value="node">Node.js</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="">*Other Skills(chose multiple)</label>
+            <br>
+            <select name="skills" id="" multiple="" size="6" required="">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Node.js">Node.js</option>
+                <option value="TypeScript">TypeScript</option>
+            </select>
+            <br><br>
+            <label for="">*Quick add via datalist</label><br>
+            <input list="skills" name="skill" id="skill" placeholder="Start Typing a Skill" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="">*Availability &amp; Preferences</label>
+            <br>
+            <input type="date" name="" id="" required="">
+            <br><br>
+            <label for="">*Preferred Interview Time</label>
+            <br>
+            <input type="time" name="" id="" required="">
+            <br><br>
+            <label for="">*Time Zone</label>
+            <br>
+            <select name="Time Zone" id="" required="">
+                <option value="Asia/Kolkata">Asia/Kolkata</option>
+                <option value="Asia/Kathmandu">Asia/Kathmandu</option>
+            </select>
+            <br><br>
+            <label for="">*Brand Color Preference</label>
+            <br>
+            <input type="color" name="" id="" required="">
+            <br><br>
+            <label for="">*Expected CTC(Lakhs/Year)</label>
+            <br>
+            <input type="range" name="" id="" required="">
+            <br>
+            (We know you want 40🥹)
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Documents</legend>
+            <label for="">*Upload Resume(PDF)</label>
+            <br>
+            <input type="file" name="" id="" accept="PDF" required="">
+            <br><br>
+            <label for="">*Profile Photo(JPG/PNG)</label>
+            <br>
+            <input type="file" name="" id="" accept="JPG/PNG" required="">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Short Answers</legend>
+            <label for="">*Why should we consider you</label>
+            <br>
+            <input type="text" name="" id="" placeholder="Write at least 30 characters" required="">
+            <br><br>
+            <label for="">*Referral Code</label>
+            <br>
+            <input type="text" name="" id="" pattern="[A-Z]{3}-[0-9]{4}" placeholder="ABC-1234" required="">
+            <br><br>
+        </fieldset>
+        <details>
+            <summary>Optional Survey (expand)</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolores.</p>
+        </details>
+        <br>
+        <input type="checkbox" required="">
+        <label for="">* I confirm that all the information is accurate to my best knowledge and I accept the terms.</label>
+        <br><br>
+        <button type="submit" value="submit">Submit Application</button>
+        <input type="reset" value="reset">
+        <hr>
+        <br>
+        <br>
+
+        "Made with 🖤 using only HTML5 elements and built-in validation."
+    </form>
+</body>
+</html>

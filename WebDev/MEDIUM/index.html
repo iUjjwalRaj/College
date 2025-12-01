@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium Clone – UJJWAL RAJ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="main-header">
+    <div class="logo">Medium</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="header-buttons">
+      <button>Write</button>
+      <img src="profile-pic.JPG" alt="profile" class="profile-pic">
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTAINER ========== -->
+  <main class="container">
+
+    <!-- ========== LEFT SIDEBAR ========== -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">📚 Library</a></li>
+        <li><a href="#">👤 Profile</a></li>
+        <li><a href="#">✍️ Stories</a></li>
+        <li><a href="#">📊 Stats</a></li>
+        <li><a href="#">⭐ Following</a></li>
+        <li><a href="#">＋ Find writers and publications to follow. <br> <br> See suggestions</a></li>
+      </ul>
+    </nav>
+
+    <!-- ========== FEED SECTION ========== -->
+    <main class="feed">
+      <div class="feed-header">
+        <button class="tab active">For You</button>
+        <button class="tab">Featured</button>
+      </div>
+
+      <!-- === POST CARD (Duplicate this block for infinite scroll effect) === -->
+
+      
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS ================= -->
+
+      <!-- Post 1 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Will Lockett</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>AI Pullback Has Officially Started</h2>
+            <p>As the hype fades, investors are realizing that not every AI startup is destined for success. Here's what comes next for the industry.</p>
+            <div class="stats">
+              <span>2d ago</span> • <span>4.3k views</span> • <span>159 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_trend.png" alt="AI Future">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 2 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Maya Romero</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Psychology Behind Infinite Scrolling</h2>
+            <p>Social media companies mastered the art of keeping you hooked. Here’s how your brain chemistry is being used against you.</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>2.8k views</span> • <span>121 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_scroll.png" alt="Infinite Scroll Psychology">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 3 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Arjun Mehta</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Every Startup Should Think Like a Hedge Fund</h2>
+            <p>In a volatile world, cash flow is your weapon. Learn how top founders manage liquidity like Wall Street traders.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>3.1k views</span> • <span>94 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_startup_finance.png" alt="Startup Hedge Fund">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 4 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Dr. Kelsey Breesman</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Carbon Cost of Everyday Apps</h2>
+            <p>Your favorite streaming app might emit more CO₂ than you think. Here’s the data on the environmental cost of digital habits.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>6.7k views</span> • <span>183 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_carbon_apps.png" alt="Carbon Footprint Apps">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 5 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Alex Tanaka</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Rise of Virtual Workplaces</h2>
+            <p>Remote offices are here to stay. From metaverse meetings to digital workspaces, the 9-to-5 is being redefined.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>8.9k views</span> • <span>220 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_virtual_work.png" alt="Virtual Office">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 6 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Sara Velasquez</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Minimalism is Dead. Here’s What’s Replacing It.</h2>
+            <p>After a decade of white walls and empty desks, maximalism is making a comeback in fashion, art, and tech design.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>5.4k views</span> • <span>133 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_maximalism_design.png" alt="Design Trend">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 7 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Tanirika Ahluwalia</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>How I Used AI to Automate My College Life</h2>
+            <p>From scheduling assignments to writing code, I built an AI assistant that handles everything — and it actually works.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>9.1k views</span> • <span>301 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_student.png" alt="AI Student Automation">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 8 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Priya Deshmukh</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Future of Learning Isn’t in Classrooms</h2>
+            <p>Universities are losing ground to online creators. The next generation of education will look nothing like today’s.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>7.8k views</span> • <span>172 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_future_learning.png" alt="Online Learning">
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= FEED POSTS (Batch 2) ================= -->
+
+      <!-- Post 9 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author1.jpeg" alt="Author">
+          <span>Dr. Ethan Crawford</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>When AI Starts Making Moral Decisions</h2>
+            <p>Machines are learning ethics faster than universities can teach it. But who gets to define what’s “right” for them?</p>
+            <div class="stats">
+              <span>3d ago</span> • <span>9.8k views</span> • <span>340 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_ai_ethics.png" alt="AI Ethics Concept">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 10 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author2.jpg" alt="Author">
+          <span>Olivia Trent</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Day I Quit My Job to Build a One-Person Startup</h2>
+            <p>Startups are no longer teams of 20. With automation and AI, it’s possible to run a company entirely alone — here’s how I did it.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>12.4k views</span> • <span>511 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_solo_startup.png" alt="Solo Founder Startup">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 11 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author3.JPG" alt="Author">
+          <span>Rahul Nambiar</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Tech Billionaires Are Buying Farmland</h2>
+            <p>From Jeff Bezos to Bill Gates, the ultra-rich are quietly investing in the oldest asset class: soil. The reason will surprise you.</p>
+            <div class="stats">
+              <span>6d ago</span> • <span>8.3k views</span> • <span>297 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_farmland_billionaires.png" alt="Billionaires Buying Farmland">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 12 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author4.png" alt="Author">
+          <span>Emily Zhang</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Real Cost of Working from Anywhere</h2>
+            <p>Digital nomads show us paradise — but what they don’t show is burnout, time zones, and visa chaos. Here’s the hidden reality.</p>
+            <div class="stats">
+              <span>4d ago</span> • <span>7.6k views</span> • <span>182 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_digital_nomad.png" alt="Digital Nomad Reality">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 13 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author5.JPG" alt="Author">
+          <span>Dr. Victor Allen</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Quantum Computing Is Closer Than You Think</h2>
+            <p>For years, quantum computers were science fiction. Now, they’re quietly solving problems traditional processors can’t touch.</p>
+            <div class="stats">
+              <span>5d ago</span> • <span>11.2k views</span> • <span>410 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_quantum_computing.png" alt="Quantum Computer Visualization">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 14 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author6.png" alt="Author">
+          <span>Emma Hayes</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>The Hidden Engineering Behind Every iPhone Photo</h2>
+            <p>Your phone camera isn’t taking a photo — it’s generating one. Here’s how computational photography is rewriting reality.</p>
+            <div class="stats">
+              <span>2w ago</span> • <span>15.7k views</span> • <span>531 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_computational_photography.png" alt="iPhone Computational Photography">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 15 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author7.jpg" alt="Author">
+          <span>Marcus Leung</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Can Social Media Ever Be Fixed?</h2>
+            <p>From misinformation to mental health, platforms are breaking faster than they can be repaired. The question: should they be?</p>
+            <div class="stats">
+              <span>3w ago</span> • <span>18.2k views</span> • <span>729 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_social_media_future.png" alt="Social Media Broken">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Post 16 -->
+      <div class="post-card">
+        <div class="author">
+          <img src="Author8.PNG" alt="Author">
+          <span>Nora Patel</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            <h2>Why Your Brain Loves Unfinished Tasks</h2>
+            <p>That nagging feeling when you don’t finish something? It’s called the Zeigarnik Effect — and marketers exploit it every day.</p>
+            <div class="stats">
+              <span>1w ago</span> • <span>9.5k views</span> • <span>403 comments</span>
+            </div>
+          </div>
+          <div class="post-image">
+            <img src="thumb_psychology_zeigarnik.png" alt="Unfinished Tasks Brain Psychology">
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+
+      
+
+
+      <!-- Copy the post-card block above as many times as you want -->
+    </main>
+
+    <!-- ========== RIGHT SIDEBAR ========== -->
+    <main class="suggestions">
+      <div class="section">
+        <h3>Staff Picks</h3>
+        <p><strong>Tidying Up the Detritus of a Career</strong><br><small>Sep 21</small></p>
+        <p><strong>Apps Can’t Transform Your Life. Here’s Why.</strong><br><small>Oct 6</small></p>
+        <p><strong>How to Train Mobility When You Have No Idea How to Train Mobility</strong><br><small>Oct 15</small></p>
+      </div>
+
+      <div class="section">
+        <h3>Recommended Topics</h3>
+        <div class="tags">
+          <span>Programming</span>
+          <span>Self Improvement</span>
+          <span>Data Science</span>
+          <span>Politics</span>
+          <span>Writing</span>
+          <span>Technology</span>
+          <br>
+          <p style="color: blue;">See Other Topics as well</p>
+        </div>
+      </div>
+
+      <!-- ========== WHO TO FOLLOW SECTION ========== -->
+      <div class="section who-to-follow">
+        <h3>Who to follow</h3>
+
+        <div class="follow-card">
+          <img src="Author3.JPG" alt="Jim" class="follow-img">
+          <div class="follow-info">
+            <h4>Hardika Khare</h4>
+            <p>✍️ 50x Boosted writer. AI Whisperer & Prompt...</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-card">
+          <img src="Author4.png" alt="Startup" class="follow-img">
+          <div class="follow-info">
+            <h4>The Startup</h4>
+            <p>Get smarter at building your thing. Follow to join...</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-card">
+          <img src="Author5.JPG" alt="Abdur Rahman" class="follow-img">
+          <div class="follow-info">
+            <h4>Jim the AI Whisperer</h4>
+            <p>✍️ 50x Boosted writer. AI Whisperer & Prompt...</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-card">
+          <img src="Author6.png" alt="Abdur Rahman" class="follow-img">
+          <div class="follow-info">
+            <h4>Ashikai</h4>
+            <p>1M+ Views online ✨ Entrepreneur | AI Lover |...</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <div class="follow-card">
+          <img src="Author7.JPG" alt="Abdur Rahman" class="follow-img">
+          <div class="follow-info">
+            <h4>Tanirika Ahluwalia</h4>
+            <p>1M+ Views online ✨ Entrepreneur | AI Lover |...</p>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+
+        <a href="#" class="see-more">See more suggestions</a>
+      </div>
+      <!-- ========== END WHO TO FOLLOW ========== -->
+
+
+      <!-- ========== READING LIST SECTION ========== -->
+      <div class="section reading-list">
+        <h3>Reading list</h3>
+        <p>
+          Click the <span>⭐</span> on any story to easily add it to your reading list or a custom list that you can share.
+        </p>
+      </div>
+      <!-- ========== END READING LIST ========== -->
+
+
+
+
+    </main>
+
+  </main>
+</body>
+</html>

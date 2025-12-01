@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body {
+
+
+            margin:0;   
+            font-family: Arial, sans-serif; 
+
+
+            min-height:100vh; 
+
+            display:flex; 
+            flex-direction:column;
+        }
+
+
+
+        .header {
+
+
+            display:flex; 
+
+
+            justify-content:space-between; 
+            align-items:center; 
+
+            padding:12px 18px; 
+            background:#2f4858; 
+            color:white;
+        }
+
+
+
+        .header .brand {
+            font-weight:700;
+        }
+
+
+
+
+        .nav a {
+
+            color:#dfeff4; 
+
+
+            text-decoration:none; 
+            margin-left:12px;
+        }
+
+        .main {
+
+
+            display:flex; 
+
+            flex:1 1 auto; 
+            min-height:360px;
+        }
+
+
+
+        .sidebar {
+
+
+            width:200px; 
+            background:#243a45; 
+
+            color:#fff; 
+
+            padding:18px;
+        }
+
+
+        .sidebar h3 {
+
+
+            margin-top:0;
+        }
+
+
+
+
+
+        .sidebar a {
+
+            display:block; 
+
+            color:#e6f3f7; 
+            padding:8px 6px; 
+            text-decoration:none; 
+
+
+            margin-bottom:6px; 
+            border-radius:4px;
+        }
+
+
+        .sidebar a:hover {
+            background:#2f4858;
+        }
+
+        .content {
+
+            flex:1 1 auto; 
+
+
+            background:#eef3f4; 
+            padding:20px; 
+
+            overflow:auto;
+        }
+
+
+
+        .welcome {
+
+
+            display:flex; 
+            align-items:center; 
+            justify-content:space-between; 
+
+            margin-bottom:16px;
+        }
+
+
+
+        .cards {
+
+
+
+            display:grid; 
+            grid-template-columns:repeat(3,1fr); 
+            gap:14px;
+        }
+
+        .card {
+
+
+            background:white; 
+            padding:12px; 
+
+            border-radius:8px; 
+            box-shadow:0 2px 6px rgba(0,0,0,0.06);
+        }
+
+
+
+        .footer {
+
+            display:flex; 
+
+            justify-content:center; 
+            align-items:center; 
+
+
+            padding:10px; 
+
+            background:#243a45; 
+            color:#dfe6ef;
+        }
+
+        
+
+        .header {
+
+            padding:12px 18px;
+        }
+
+        .header {
+
+            padding-left:18px; 
+            padding-right:18px;
+        }
+
+
+
+        .nav a {
+            margin-right:0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="brand"> My Dashboard </div>
+    <nav class="nav">
+
+        <a href="#"> Home </a>
+        <a href="#"> Profile </a>
+        <a href="#"> Settings </a>
+    </nav>
+</header>
+
+<main class="main">
+    <aside class="sidebar">
+        <h3> Menu </h3>
+        <a href="#"> Dashboard </a>
+        <a href="#"> Analytics </a>
+        <a href="#"> Messages </a>
+        <a href="#"> Settings </a>
+    </aside>
+
+    <section class="content">
+        <div class="welcome">
+            <h2> Welcome Back 👋 </h2>
+            <div style="color:#6a8b93; font-size:14px"> Quick overview of things </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h4> Card 1 </h4>
+                <p> Some quick info here... </p>
+            </div>
+
+            <div class="card">
+                <h4> Card 2 </h4>
+                <p> Another content block... </p>
+            </div>
+
+            <div class="card">
+                <h4> Card 3 </h4>
+                <p> Data visualization placeholder </p>
+            </div>
+
+            <div class="card">
+                <h4> Card 4 </h4>
+                <p> Stats summary... </p>
+            </div>
+
+            <div class="card">
+                <h4> Card 5 </h4>
+                <p> Notifications </p>
+            </div>
+
+            <div class="card">
+                <h4> Card 6 </h4>
+                <p> Recent Activity </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer"> 
+    <p>© 2025 My Dashboard - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

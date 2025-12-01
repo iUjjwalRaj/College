@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub IITD - We Think. Build. Solve.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* --- Google Fonts (Optional, but recommended for a similar look) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* --- CSS Variables for easy theme management --- */
+:root {
+    --bg-color: #030C1A; /* Dark Navy Blue Background */
+    --primary-text-color: #E6F1FF; /* Off-white for text */
+    --secondary-text-color: #8892b0; /* Lighter gray for paragraphs */
+    --highlight-color: #553EFF; /* Purple for primary button */
+    --card-bg-color: rgba(17, 34, 64, 0.35); /* Translucent card background */
+    --card-border-color: rgba(100, 116, 139, 0.3);
+}
+
+/* --- General Body & Reset Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+}
+
+/* --- Header & Navigation Bar --- */
+header {
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid var(--card-border-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--highlight-color);
+}
+
+.nav-links .fa-github {
+    margin-right: 0.5rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1.5rem;
+}
+
+.hero-logo {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    max-width: 650px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* --- Button Styles --- */
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--highlight-color);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-text-color);
+    color: var(--bg-color);
+}
+
+/* --- Stats Section --- */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.stat-card {
+    background: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    width: 320px;
+    backdrop-filter: blur(10px); /* This creates the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+}
+
+/* --- Responsive Design for smaller screens --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on mobile, would need a hamburger menu script */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">DevClub IITD</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Communities</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Past OCs</a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://www.devclub.in/static/media/dcr.f252ac81.svg" alt="DevClub Logo" class="hero-logo">
+            <h1>We Think. Build. Solve.</h1>
+            <p>DevClub IITD is a community of developers, innovators, and problem solvers fostering technical excellence and creative engineering at IIT Delhi since 2017.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Communities</a>
+                <a href="#" class="btn btn-secondary">View Projects</a>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <i class="fas fa-code"></i>
+                <h3>50+ Projects</h3>
+                <p>Open source contributions</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>20+ Events</h3>
+                <p>Workshops & hackathons yearly</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>Community of 1000+</h3>
+                <p>Active developer community</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Assignment</title>
+  <style>
+
+    body {
+          
+      margin: 0;    
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      flex-direction:column; /* students fill */
+      display: flex;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between; /* students fill */
+      align-items:center;     /* students fill */
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Main Section */
+    .main {
+      display: flex;
+      flex:auto; /* so it takes available space */
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #f4f4f4;
+    }
+
+
+    /* child property */
+    .content {
+      /* display: flex; */
+
+      flex:auto; /* students fill */
+      background: #ddd;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      display: flex;
+      justify-content:baseline; /* students fill */
+      align-items:center;     /* students fill */
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LOGO</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <aside class="sidebar">Sidebar</aside>
+    <section class="content">Main Content</section>
+  </main>
+
+  <footer class="footer">
+    <p>Footer Content</p>
+  </footer>
+</body>
+</html>

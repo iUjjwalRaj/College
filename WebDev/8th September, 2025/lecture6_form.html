@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6 ^ FORM FILLING </title>
+</head>
+<body>
+    <h1>Form Tag</h1>
+    <form action="" method="post" target="_blank">
+        <fieldset>
+            <legend>
+                <label for="search">Search Google:</label>
+                <input type="text" id="search" name="q" placeholder="Type your query here">
+                <input type="submit" value="Search">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" minvalue="18" maxvalue="120">
+                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                <br><br>
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt">
+                <br><br>
+                <label for="color">Select your favorite color:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                <br><br>
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91-1234567890">
+                <br><br>
+                <label for="file">Upload a file:</label>
+                <input type="file" id="file" name="file">
+                <br><br>
+                <label for="range">Select a range:</label>
+                <input type="range" id="range" name="range" min="0" max="100">
+                <br><br>
+                <label for="checkbox">Subscribe to newsletter:</label>
+                <input type="checkbox" id="checkbox" name="subscribe">
+                <br><br>
+                <label for="radio1">Option 1:</label>
+                <input type="radio" id="radio1" name="options" value="1">
+                <label for="radio2">Option 2:</label>
+                <input type="radio" id="radio2" name="options" value="2">
+                <br><br>
+                <label for="resume">resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                <br><br>
+                <label for="textarea">Comments:</label>
+                <textarea id="textarea" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+                <br><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend> Card Details</legend>
+            <select name="card_type" id="card_type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="rupay">RuPay</option>
+                <option value="amex">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            <br><br>
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9012 3456" maxlength="16">
+            <br><br>
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="month" id="expiry_date" name="expiry_date">
+            <br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4">
+            <br><br>
+            <input type="submit" value="Pay Now">  
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
