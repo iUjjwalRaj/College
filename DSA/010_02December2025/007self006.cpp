@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-
 // Finding sum of array using Recursion
-
 
 int sumOfArray(int arr[], int limit){
     // Base case
@@ -14,7 +12,7 @@ int sumOfArray(int arr[], int limit){
     // recursive case
 
     int n;
-    n = arr [limit -1] + sumOfArray(arr, limit - 1);
+    n = arr [limit - 1] + sumOfArray(arr, limit - 1);
 
     return n;
 }
