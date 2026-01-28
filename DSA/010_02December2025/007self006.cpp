@@ -10,7 +10,7 @@ int sumOfArray(int arr[], int limit){
     }
 
     // recursive case
-
+    
     int n;
     n = arr [limit - 1] + sumOfArray(arr, limit - 1);
 

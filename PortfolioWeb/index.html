@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ujjwal Raj</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* ===== GLOBAL LAYOUT ===== */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* ===== GLASS NAVBAR ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      background: rgba(15, 40, 90, 0.25);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(13,110,253,.4);
+      box-shadow: 0 0 25px rgba(13,110,253,.25);
+      padding: 12px 24px;
+    }
+
+    nav a {
+      color: #eaf2ff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0d6efd;
+      background: rgba(13,110,253,0.12);
+      transform: translateY(-2px);
+      box-shadow: 30px 30px 30px rgba(13,110,253,0.25);
+
+
+    }
+
+    /* ===== DARK MODE BUTTON ===== */
+    #themeToggle {
+      background: transparent;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      color: #eaf2ff;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    #themeToggle:hover {
+      background: rgba(13,110,253,0.15);
+    }
+
+    /* ===== HERO WRAPPER ===== */
+    .hero-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 90px;
+    }
+
+    /* ===== HERO CARD ===== */
+    .hero {
+      max-width: 700px;
+      width: 90%;
+      padding: 50px;
+      text-align: center;
+      background: linear-gradient(145deg, #ffffff, #f8f9fa);
+      border-radius: 16px;
+      box-shadow: 0 12px 35px rgba(13,110,253,.15);
+      border: 1px solid rgba(13,110,253,.25);
+      transition: all 0.4s ease;
+    }
+
+    .hero:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(13,110,253,0.25);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #555;
+    }
+
+    .hero .small {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 12px;
+      background: linear-gradient(180deg, #212529, #121417);
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    footer:hover {
+      box-shadow: 0 -8px 30px rgba(13,110,253,0.25);
+    }
+
+    /* ===== DARK MODE STYLES ===== */
+    body.dark {
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    body.dark nav {
+      background: rgba(15, 23, 42, 0.8);
+      border-bottom: 1px solid rgba(99,102,241,.4);
+      box-shadow: 0 0 25px rgba(99,102,241,.25);
+    }
+
+    body.dark nav a {
+      color: #e5e7eb;
+    }
+
+    body.dark nav a:hover {
+      color: #93c5fd;
+      background: rgba(99,102,241,0.15);
+    }
+
+    body.dark .hero {
+      background: linear-gradient(145deg, #020617, #020617);
+      border: 1px solid rgba(99,102,241,0.4);
+      box-shadow: 0 20px 45px rgba(99,102,241,0.35);
+    }
+
+    body.dark .hero h1 {
+      color: #93c5fd;
+    }
+
+    body.dark .hero p {
+      color: #cbd5f5;
+    }
+
+    body.dark footer {
+      background: linear-gradient(180deg, #020617, #020617);
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <!-- <a href="#">Home</a> -->
+    <!-- <a href="#">Projects</a> -->
+    <!-- <a href="#">Contact</a> -->
+    <a href="#"><button id="themeToggle">Dark Mode</button></a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero-wrapper">
+    <div class="hero">
+        <h1>Ujjwal Raj</h1>
+        <p>Personal website & project hub</p>
+        <p class="small">Coming soon. Currently busy surviving exams.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Ujjwal Raj
+  </footer>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark");
+      toggleBtn.textContent = "Light Mode";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.textContent = "Light Mode";
+      } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.textContent = "Dark Mode";
+      }
+    });
+  </script>
+
+</body>
+</html>
