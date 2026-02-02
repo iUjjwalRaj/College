@@ -1,0 +1,14 @@
+button{
+    color: cadetblue;
+    background-color: burlywood;
+}
+
+.dark{
+    background-color: black;
+    color: lightblue;
+}
+
+.light{
+    background-color: white;
+    color: darkblue;
+}
