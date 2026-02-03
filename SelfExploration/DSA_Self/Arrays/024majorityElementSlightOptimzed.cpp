@@ -32,6 +32,6 @@ int main(){
     int target = 13;
     vector<int> ans = majorityElement(nums, target);
     cout << ans[0] << endl;
-
+    
     return 0;
 }
