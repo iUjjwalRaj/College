@@ -39,16 +39,60 @@ Stopping conditions:
 */
 
 #include<iostream>
+#include<vector> 
 using namespace std;
 
 bool isHappy(int n){
-    vector<int> storage = {};
-    int rem, sum = 0;
-    while (n > 0)
-    {
-        rem = n % 10;
-        sum = sum + (rem * rem);
-    }
-    
+    vector<int> storage;
+    int rem, sum; 
 
+    // OUTER LOOP: Controls the sequence (19 -> 82 -> 68...)
+    // We run this indefinitely until we hit a return statement
+    while (true) 
+    {
+        // 1. HAPPY CHECK: Did we reach 1?
+        if (n == 1) 
+        {
+            return true;
+        }
+
+        // 2. LOOP CHECK: Have we seen 'n' before?
+        for (int x : storage) 
+        {
+            if (x == n) 
+            {
+                return false;
+            }
+        }
+
+        // 3. STORE: Save 'n' to history before we change it
+        storage.push_back(n);
+
+        // 4. MATH: Calculate sum of squares
+        // This is the INNER LOOP your professor wants to see separate
+        sum = 0;
+        while (n > 0) 
+        {
+            rem = n % 10;
+            sum = sum + (rem * rem);
+            n = n / 10;
+        }
+
+        // 5. UPDATE: Set n to the new sum for the next pass
+        n = sum;
+    }
+}
+
+int main(){
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+    if (isHappy(n))
+    {
+        cout << n << " is a Happy Number." << endl;
+    }
+    else
+    {
+        cout << n << " is not a Happy Number." << endl;
+    }
 }
